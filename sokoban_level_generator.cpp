@@ -1,6 +1,5 @@
 /*
 Developed by Kevin29
-Copyright (C) by Kevin29
 
 Readme:
 
@@ -84,7 +83,7 @@ int number = 10; // Number of levels
 
 int main(){
 	
-	cout << "\n0: ÖÐÎÄ; 1: English\n";
+	cout << "\n0: ä¸­æ–‡; 1: English\n";
 	cin >> language;
 	cout << endl;
 	/*
@@ -110,21 +109,21 @@ int main(){
 			cout << endl;
 		}
 		else{
-			cout << "\n¸´ÖÆÄãÏëÒªµÄ¹Ø¿¨µ½level.txt\n"
-		   		 << "level.txtÒªºÍsokoban_level_generator.exeÎ»ÓÚÍ¬Ò»¸öÎÄ¼þ¼Ð\n\n"
-		   		 << "ÊäÈëÖÖ×Ó: 0 (È¡¾öÓÚµ±Ç°Ê±¼ä, ¼´srand(time(0))); ÕýÕûÊý (ÓÃÓÚÉú³ÉÌØ¶¨¹Ø¿¨)\n";
+			cout << "\nå¤åˆ¶ä½ æƒ³è¦çš„å…³å¡åˆ°level.txt\n"
+		   		 << "level.txtè¦å’Œsokoban_level_generator.exeä½äºŽåŒä¸€ä¸ªæ–‡ä»¶å¤¹\n\n"
+		   		 << "è¾“å…¥ç§å­: 0 (å–å†³äºŽå½“å‰æ—¶é—´, å³srand(time(0))); æ­£æ•´æ•° (ç”¨äºŽç”Ÿæˆç‰¹å®šå…³å¡)\n";
 			cin >> seed;
 			cout << endl;
 			
-			cout << "ÊäÈëÄæÍÆÉî¶È: À­Ïä×ÓµÄ´ÎÊý (ÊýÖµÔ½´ó, Éú³ÉµÄ¹Ø¿¨ÓÐ¸ÅÂÊÔ½ÄÑ)\n";
+			cout << "è¾“å…¥é€†æŽ¨æ·±åº¦: æ‹‰ç®±å­çš„æ¬¡æ•° (æ•°å€¼è¶Šå¤§, ç”Ÿæˆçš„å…³å¡æœ‰æ¦‚çŽ‡è¶Šéš¾)\n";
 			cin >> push_depth;
 			cout << endl;
 			
-			cout << "ÊäÈëÉú³É¹Ø¿¨µÄÊýÁ¿: \n";
+			cout << "è¾“å…¥ç”Ÿæˆå…³å¡çš„æ•°é‡: \n";
 			cin >> number;
 			cout << endl;
 			
-			cout << "ÊäÈëÉú³É¹Ø¿¨µÄ×îÐ¡²½Êý: \n";
+			cout << "è¾“å…¥ç”Ÿæˆå…³å¡çš„æœ€å°æ­¥æ•°: \n";
 			cin >> min_move;
 			cout << endl;
 		}
@@ -161,7 +160,7 @@ int main(){
 			cout << "\nExit? y:yes n:no\n";
 		}
 		else{
-			cout << "\nÍË³ö? y:ÊÇ n:·ñ\n";
+			cout << "\né€€å‡º? y:æ˜¯ n:å¦\n";
 		}
 		char exit;
 		cin >> exit;
@@ -173,7 +172,7 @@ int main(){
 		cout << "\nEnter anything to exit.\n";
 	}
 	else{
-		cout << "\nÊäÈëÈÎÒâ¼üÍË³ö.\n";
+		cout << "\nè¾“å…¥ä»»æ„é”®é€€å‡º.\n";
 	}
 	cin >> sleep;
 
@@ -842,7 +841,7 @@ void generate_level(int index){
 				out_level << " / Level " << global_count << endl;
 			}
 			else{
-				out_level << " Ëæ»úÉú³É°æ / ¹Ø¿¨" << global_count << endl;
+				out_level << " éšæœºç”Ÿæˆç‰ˆ / å…³å¡" << global_count << endl;
 			}
 			
 			out_level << "Author: " << UTF8ToGB(Author.c_str());
@@ -850,7 +849,7 @@ void generate_level(int index){
 				out_level << endl;
 			}
 			else{
-				out_level << " + Kevin29µÄËæ»úÉú³ÉÆ÷" << endl;
+				out_level << " + Kevin29çš„éšæœºç”Ÿæˆå™¨" << endl;
 			}
 			out_level << "Solution: \n" << forward_solution << endl;
 		}
